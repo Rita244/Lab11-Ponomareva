@@ -13,23 +13,3 @@
 // Console.WriteLine(found ? "Студент найден" : "Студент не найден");
 
 
-int variant = 1;
-bool isPrime = true;
-
-if (variant < 2)
-{
-   isPrime = false;
-}
-else
-{
-   for (int divisor = 2; divisor < variant; divisor++)
-   {
-      if (variant % divisor == 0)
-      {
-         isPrime = false;
-         break;
-      }
-   }
-}
-
-Console.WriteLine(isPrime ? "Номер варианта простой" : "Номер варианта составной");
